@@ -1,0 +1,84 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>IndusGroup</groupId>
+  <artifactId>JPAProject</artifactId>
+  <version>1</version>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.version>5.0.1.RELEASE</spring.version>
+	</properties>
+	
+<dependencies>
+
+	<!-- Hibernate Maven Dependencies -->
+	<!-- Googled: hibernate-core jar maven -->
+	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-core</artifactId>
+		<version>5.4.3.Final</version>
+	</dependency>
+
+	<!-- PostgreSQL Maven Dependencies -->
+	<!-- Googled: postgresql maven -->
+	<!-- https://mvnrepository.com/artifact/postgresql/postgresql -->
+	<dependency>
+		<groupId>postgresql</groupId>
+		<artifactId>postgresql</artifactId>
+		<version>9.1-901-1.jdbc4</version>
+	</dependency>
+
+	<!-- Spring Dependencies -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-core</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-beans</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-context</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+
+
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+	<!-- Spring ORM Dependencies -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-orm</artifactId>
+		<version>5.1.8.RELEASE</version>
+	</dependency>
+
+
+	<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2 -->
+	<!-- Apache Commons DBCP -->
+	<dependency>
+		<groupId>org.apache.commons</groupId>
+		<artifactId>commons-dbcp2</artifactId>
+		<version>2.1</version>
+	</dependency>
+
+</dependencies>
+
+
+<build>
+    <sourceDirectory>src/main/java</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  
+</project>
